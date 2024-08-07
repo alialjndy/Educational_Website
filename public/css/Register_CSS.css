@@ -1,0 +1,190 @@
+html,
+body {
+    background-image: url('../Images/26.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+input{
+    padding: 10px;
+    margin:10px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+
+}
+input[type="text"],
+input[type="Email"],
+input[type="Password"]{
+    width: 90%;
+}
+.Info{
+    margin: 5% auto;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px grey;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+}
+input[type="text"]:focus,
+input[type="Email"]:focus,
+input[type="Password"]:focus{
+    border: 1px solid black;
+}
+#sendREG {
+    background-color: #06bbcc;
+    border-radius:5px ;
+}
+#sendLOGIN{
+    background-color: rgb(192, 190, 190);
+}
+
+#sendREG:hover {
+    cursor: pointer;
+    background-color: #058e9a;
+    /* color: white; */
+}
+#sendLOGIN:hover{
+    cursor: pointer;
+    background-color: #d4cfcf;
+}
+.ContentOfRoleAndBirthday{
+    display: flex;
+        padding-left: 15px;
+            padding-right: 15px;
+}
+.birthday{
+    color: black;
+    padding: 5px;
+}
+#StudentOrTeacher{
+    height: 20px;
+
+
+}
+p{
+    padding-right: 10px;
+    display: inline-block;
+}
+.StudentOrTeach{
+    display: flex;
+    padding: 22px;
+    padding-left: 26px !important;
+}
+/*
+#LoginINRegister {
+    color: white !important;
+    font-size: 20px !important;
+    background-color: #06BBCC !important;
+    cursor: pointer !important;
+}
+
+.send {
+    font-size: 16px !important;
+}
+
+input {
+    padding: 20px !important;
+    margin: 5px !important;
+    border-radius: 8px;
+    outline: none;
+    outline-color: transparent;
+
+}
+
+#send:hover {
+    transition: 0.3s;
+    background-color: #058e9a;
+}
+
+
+#send {
+    outline-color: transparent;
+    border-radius: 8px;
+    background-color: #06BBCC;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.parent {
+    height: 100%;
+}
+
+.forImageBack {
+    background-color: #ccc1c1;
+    height: 100%;
+
+}
+
+
+.text {
+    color: #06BBCC;
+}
+
+.login {
+    font-size: 25px;
+    margin-top: -700px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+}
+
+select {
+    outline: none;
+    margin: 5px !important;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+.gender,
+.birthday,
+.StudentOrTeach {
+    display: ruby;
+}
+
+option {
+    padding: 8px;
+    margin: 5px;
+}
+
+#role,
+#Gender,
+#birthday {
+    color: #ffffff;
+}
+
+#error,
+#hack {
+    display: inline-block;
+    color: red;
+    font-weight: bolder;
+}
+
+#newLogin {
+    color: white;
+    font-size: 20px;
+    background-color: #06BBCC;
+    cursor: pointer;
+}
+
+#or {
+    color: white;
+}
+
+#LoginINRegister:hover {
+    transition: 0.3s;
+    background-color: #058e9a;
+}  */

@@ -1,0 +1,147 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.photo-and-text {
+    text-align: center;
+    padding: 0px;
+    color: #06bbcc;
+    margin-bottom: 20px;
+}
+
+.photo-and-text h1 {
+    background: #0073e6;
+    color: #fff;
+    padding: 1em 0;
+    font-size: 25px;
+    position: relative;
+
+    text-align: center;
+}
+
+.nav ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.nav ol li {
+    margin: 0 10px;
+}
+
+.nav ol li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav ol li a:hover,
+.nav ol li a.active {
+    background-color: #555;
+}
+
+.messege {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.messege p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+form ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+form ul li {
+    margin: 15px 0;
+}
+
+form input.one,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+#sendCotact{
+    background-color: #06bbcc;
+    outline: none !important;
+    color: white;
+    border: none !important;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+#sendCotact:hover{
+    background-color: #0d7e89;
+}
+
+
+.hhh {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.hhh .address,
+.hhh .phone {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.hhh img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.this_address h3,
+.this_phone h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #06bbcc;
+}
+
+.this_address h5,
+.this_phone h5 {
+    margin: 5px 0 0;
+    color: #777;
+}
+
+

@@ -1,0 +1,922 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #06bbcc;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 97px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width : 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    position: sticky;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+}
+
+header .container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 97px;
+    background-color: rgb(255, 251, 251);
+    width: 100%;
+
+}
+
+header .container::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    width: calc(100% - 30px);
+    background-color: #06BBCC;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav .toggle-menu {
+    color: rgb(186, 28, 28);
+    font-size: 22px;
+}
+
+@media (min-width : 768px) {
+    header nav .toggle-menu {
+        display: none;
+    }
+}
+
+header nav ul {
+    display: flex;
+}
+
+@media (max-width : 767px) {
+    header nav ul {
+        display: none;
+    }
+}
+
+header nav .toggle-menu:hover+ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: (0 0 0 /50%)
+}
+
+header nav .toggle-menu:hover+ul li a {
+    padding: 15px;
+}
+
+
+header nav ul li a {
+    padding: 40px 10px;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 3;
+}
+
+
+
+header nav ul li a.active,
+header nav ul li a:hover,
+header nav ul li a:focus{
+    color: var(--main-color);
+    /* border-bottom: 1px solid var(--main-color); */
+}
+
+header nav .form {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-left: 30px;
+
+    border-left: 1px solid white;
+}
+
+header nav .form i {
+    color: white;
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-10px);
+    right: 0;
+}
+
+.logo {
+    font-size: 20px;
+    text-decoration: none;
+    color: #06bbc0;
+}
+
+.photo {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../Images/16.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    background-color: #e3e3e3;
+    padding: 10px;
+
+}
+
+.photo h1 {
+    color: #06bbc0;
+    font-size: 40px;
+}
+
+.photo h2 {
+
+    font-size: 29px;
+}
+
+.join {
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000ab;
+    width: 450px;
+    height: 50px;
+    background-color: #00BCD4;
+    border-radius: 8px;
+    font-size: 27px;
+    font-weight: bolder;
+    transition: 0.4s;
+}
+
+.join:hover {
+    background-color: #03A9F4;
+    transition: 0.2s;
+    /* box-shadow: 0px 0px 5px 2px #7c7c7cd9; */
+    /* transform: translate(5px, 5px); */
+}
+
+.content article {
+    font-size: 22px;
+    text-align: center;
+}
+
+.contain {
+    display: inline-flex !important;
+    width: 100%;
+    position: relative;
+    padding-left: 150px;
+}
+
+.text {
+    padding-left: 20px;
+    width: 800px;
+}
+
+.paragraph {
+    padding-left: 20px;
+    line-height: 42px;
+    font-size: 26px;
+    word-wrap: break-word;
+    color: #392b2b;
+}
+
+.text a {
+    text-decoration: none;
+    color: #06bbc0;
+}
+
+.paragraph1,
+.paragraph2,
+.paragraph3,
+.paragraph4 {
+    background-color: #e3e3e3;
+    margin-bottom: 5px;
+}
+
+.paragraph4 {
+    margin-bottom: 5px !important;
+}
+
+@keyframes kkkk {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+/* .child1{
+    background-image: url(Images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child2{
+    background-image: url(Images/2.jpg);
+    background-repeat: no-repeat;background-size: cover;
+}
+.child3{
+    background-image: url(Images/13.jpg);background-repeat: no-repeat;background-size: cover;
+}
+.child4{
+    background-image: url(Images/14.jpg);background-repeat: no-repeat;background-size: cover;
+} */
+
+
+.child1,
+.child2,
+.child3,
+.child4 {
+    margin-right: 10px;
+    background-color: #e3e3e3;
+    line-height: 200px;
+    border-radius: 10px;
+    transition: 0.4s;
+    /* animation-name: kkkk;
+    animation-duration: 1s;
+    animation-play-state: paused; */
+}
+
+.child4 {
+    margin-right: 0px !important;
+}
+
+.father {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 50px;
+    position: absolute;
+    left: 20%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.child1:hover,
+.child2:hover,
+.child3:hover,
+.child4:hover {
+    background-color: #06BBCC;
+    color: white;
+    box-shadow: 0px 0px 10px 5px #969292d9;
+    cursor: pointer;
+    transform: translateY(-10px);
+
+    /* this commnet commnad for append animation to grid div if you want to running animation please UnCommnet this code */
+
+    /* animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse; */
+}
+
+#For_Func {
+    display: none;
+}
+
+.categ_child {
+    text-align: center;
+    font-size: 28px;
+    display: ruby-text;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #e3e3e3;
+    display: grid;
+    grid-template-columns: 374.75px 374.75px 374.75px 374.75px;
+    padding: 10px;
+}
+
+.one ul a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    padding-left: 0px !important;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.one ul a li {
+    padding-left: 0px !important;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.one ul a:hover {
+    color: #06BBCC;
+
+}
+
+.zero {
+    padding-left: 20px;
+    /* padding-top: 20px; */
+}
+
+.two ul li {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.three .two_one {
+    padding: 10px;
+    padding-left: 0px !important;
+
+}
+
+.three .two_one i {
+    color: black;
+    text-align: center;
+    transition: 0.4s;
+    font-size: 25px;
+    /* background-color: rgb(162, 156, 156); */
+    padding-right: 10px;
+}
+
+.three .two_one i:hover,
+.zero h1 a:hover {
+    color: #06BBCC;
+    cursor: pointer;
+}
+
+.three .two_one #message {
+    padding-right: 0px !important;
+}
+
+.zero h1 a {
+    transition: 0.4s;
+    text-decoration: none;
+    color: black;
+    transform: translateX(10px);
+}
+
+.zero p {
+    width: 280px;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.End_footer {
+    display: contents;
+    background-color: grey;
+}
+
+.End_footer_child {
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    grid-column: span 4;
+    background-color: #80808038;
+    font-size: 22px;
+    height: 50px;
+}
+.error-message {
+    font-size: 20px;
+    background-color: #f8d7da;
+    color: #f71027;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-message p {
+    margin: 0;
+    font-size: 16px;
+}
+#ButtonInCreate{
+    font-size: 18px;
+    text-decoration: none !important;
+    padding: 10px !important;
+    background-color: #007bff !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 4px !important;
+    width: 50% !important;
+    display: inline-block !important;
+    margin-left: 25% !important;
+    text-align: center !important;
+    cursor: pointer !important;
+}
+#ButtonInCreate:hover{
+background-color: #0056b3 !important;
+}
+/* this section of code css to style a form in create page */
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.form-group input[readonly] {
+    background-color: #f9f9f9;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: grey;
+    border: 3px solid #423a3a;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #555;
+    border-color: #333;
+}
+.parentOnCreate{
+        font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.create-button {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    padding: 10px 20px;
+    border: 3px solid rgb(10, 84, 100) !important;
+    background-color: #06bbcc !important;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.create-button:hover{
+    background-color: #4fbcc6 !important;
+}
+.create-button:active {
+    background-color: #0057b3c7 !important;
+}
+
+.parentSquareBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.square-box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.square-box:hover {
+    transform: scale(1.05);
+}
+
+.square-box p {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.square-box a {
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.square-box a:hover {
+    color: darkblue;
+}
+.parentSquareBox{
+    height: 100%;
+}
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.delete-button:hover {
+    background-color: #c82333;
+}
+.delete-form {
+    margin-top: 20px;
+}
+.lesson-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* تنسيق العنوان */
+.lesson-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* تنسيق زر عرض الدورة */
+.view-course-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.view-course-button:hover {
+    background-color: #0056b3;
+}
+.btn_Edit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn_Edit:hover {
+    background-color: #0056b3;
+}
+
+.btn_Edit:active {
+    background-color: #004080;
+}
+#ButtonInCreate:hover{
+    background-color: #0056b3;
+}
+.quiz-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(236, 232, 232, 0.637);
+    width: 80%;
+    max-width: 600px;
+    background-color: transparent !important;
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question-card {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.question-card p {
+    margin: 0 0 10px;
+}
+
+.question-card label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+.parent_show{
+    display: flex;
+    justify-content: center;
+    background-image: url(../Images/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Quiz_sub{
+    text-decoration: none;
+    background: white;
+    /* border: 1px solid grey; */
+    font-size: 22px;
+    width: 225px;
+    color: #000000;
+    text-align: center;
+    box-shadow: 0px 0px 2px 3px #dad0d0;
+    height: 50px;
+    line-height: 50px;
+}
+.container_Quizes {
+    display: grid;
+    gap: 20px;
+    justify-content: space-around;
+    column-count: 5;
+    grid-template-columns: 190px 190px 190px 190px 190px;
+}
+.Quiz_sub:hover{
+    background-color: #06bbcc;
+    color:white;
+    transition: 0.3s;
+}
+.child_result{
+    width: 500px;
+    box-shadow: 0px 0px 5px 1px #aaa5a5;
+}
+.container_result{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    height: 308px;
+}
+.container_create_quiz ,
+.container_form_create_Question{
+    display: flex;
+    justify-content: center;
+}
+#Create_Quiz_button ,
+#Create_Qestion_button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#Create_Quiz_button:hover ,
+#Create_Quiz_link:hover,
+#Create_Qestion_button:hover ,
+#Create_Lesson_button:hover ,
+#ButtonInCreate:hover,
+#sendCotact:hover{
+    background-color: #0056b3 !important;
+}
+#Create_Quiz_link{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 50%;
+    display: inline-block;
+    margin-left: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+.container_form_create_Question{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 29%);
+    width: 400px;
+}
+#form_In_Create_Question{
+    width: 300px !important;
+}
+#Create_Lesson_button ,
+#sendCotact{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #007bff !important;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 50%;
+    display: inline-block;
+    /* margin-left: 25%; */
+    text-align: center;
+    cursor: pointer;
+}
+.header_for_service{
+
+    background: #0073e6;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+
+}
+.header_for_service h1 {
+    margin: 0;
+}
+
+main {
+    padding: 1em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.service {
+    background: #fff;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+    color: #0073e6;
+}
+
+.service ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.service ul li {
+    background: url('checkmark.png') no-repeat left center;
+    background-size: 20px 20px;
+    padding-left: 30px;
+    margin-bottom: 0.5em;
+}
+blockquote {
+    font-style: italic;
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+/*  */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+    /* تأكد من أن الزر يظهر فوق أي عناصر أخرى */
+}
+
+/* تصميم الأشرطة في زر الهامبرغر */
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* تصميم القائمة المنسدلة */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    /* تعديل الارتفاع حسب الحاجة */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    /* عرض القائمة */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* تأثير عند النقر على زر الهامبرغر */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/* ===> ALBRENS <=== */

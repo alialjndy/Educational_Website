@@ -1,0 +1,165 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html,
+body {
+    background-image: url('../Images/26.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    margin: 0;
+}
+input{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    border: 1px solid rgba(128, 128, 128, 0.264);
+    border-radius: 5px ;
+}
+input[type="text"] ,
+input[type="email"],
+input[type="password"]{
+    width: 90%;
+}
+input:focus{
+    border: 1px solid grey;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+}
+.contentForm2 {
+    box-shadow: 0px 0px 10px 1px grey;
+    width: 400px;
+    text-align: center;
+    /* margin: 40% auto; */
+}
+#reg{
+    background-color: #06bbcc;
+}
+#send{
+    background-color: rgba(177, 173, 173, 0.533);
+}
+
+#reg:hover{
+    cursor: pointer;
+    background-color: #058e9a;
+    /* color: white; */
+}
+#send:hover{
+    cursor: pointer;
+    background-color: rgba(200, 195, 195, 0.936);
+}
+
+/* input {
+    padding: 10px;
+    margin: 10px;
+}
+
+.forBackgrond {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -6;
+    position: absolute;
+}
+
+.parent {
+    width: 100%;
+    height: 100%;
+}
+
+.contentForm {
+    z-index: 9;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+input {
+    padding: 20px !important;
+    margin: 5px !important;
+    border-radius: 8px;
+    outline: none;
+    outline-color: transparent;
+
+}
+
+.paragraphLogin {
+    color: #06BBCC;
+    font-weight: bolder;
+}
+
+#reg {
+    outline-color: transparent;
+    border-radius: 8px;
+    background-color: #06BBCC;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#reg:hover {
+    transition: 0.3s;
+    background-color: #058e9a;
+}
+
+.contentForm2 {
+    position: relative;
+    top: 80px;
+}
+
+.error,
+#errorggg,
+#err {
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+aside {
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#or {
+    color: white !important;
+}
+
+#send {
+    outline-color: transparent;
+    border-radius: 8px;
+    background-color: #06BBCC;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#send:hover {
+    transition: 0.3s;
+    background-color: #058e9a;
+} */
+.error_message {
+    font-size: 20px;
+    /* background-color: #f8d7da; */
+    color: #f71027;
+    /* border: 1px solid #f5c6cb; */
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
